@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+
+    <link href="/Content/bootstrap.css" rel="stylesheet" />
+    <link href="/Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="~/Content/style.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body id="body">
+    <header class="page-header">
+        <h1 class="text-primary text-center">Check-In System</h1>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                @if (IsSectionDefined("SideBar"))
+                {
+                    @RenderSection("SideBar", true)
+                }
+
+            </div>
+            <div class="col-md-8">
+                @RenderBody()
+
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="row">
+        <p class="text-center">Dara Atanackovic &copy; 2020.</p>
+    </footer>
+</body>
+</html>
+

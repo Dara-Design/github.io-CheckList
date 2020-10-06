@@ -1,0 +1,30 @@
+﻿
+@using FirstMvcApp.Models
+
+
+<div class="panel panel-primary">
+    <div class="panel-heading">Attendants:</div>
+    <div class="panel-body">
+
+
+
+        @if (Attendance.GetAttendants().Count == 0)
+        {
+            <p>Currently there are no attendants... Add them!</p>
+        }
+        else
+        {
+
+            int counter = 0;
+
+            <table class="table table-condensed table-hover">
+                @foreach (string person in Attendance.GetAttendants())
+                {
+                    counter++;
+                    <tr><td>@counter.</td><td>@person</td></tr>
+                }
+            </table>
+        }
+
+    </div>
+</div>
