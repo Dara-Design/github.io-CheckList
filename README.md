@@ -1,3 +1,5 @@
 # github.io-CheckList
-
-Visual Studio 2017
+  Technologies: MVC
+  Simple check-in application- adding atendantts in list
+  Use Visual Studio 2017
+  Tip# On start rebuild solution
